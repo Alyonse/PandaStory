@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+/* Не получается разместить хедер по нижнему краю фона; если использовать паддинг, то фон от .site_header перекрывает картинку
+
+.background_header {
+    height: 264px;
+    width: 100%;
+    background-image: url(background-wooden-plank.jpg);
+}
+
+*/
+
+.site_header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.site_header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1024px;
+    max-width: 1164px;
+}
+
+.header_left {
+    display: flex;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-right: 40px;
+}
+
+.logo_container a {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.logo_container img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.header_navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.header_navigation .navigation_item {
+    font-size: 16px;
+    margin-right: 16px;
+    text-transform: uppercase;
+}
+
+.header_navigation .navigation_item a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.header_navigation .navigation_item a:hover {
+    opacity: 1;
+}
+
+.main_container {
+    background-color: #e4e4e4;
+    padding: 20px 0;
+}
+
+.main_content {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.main_content {
+    font-family: "Roboto","Open Sans",helvetica,arial,sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 10px 30px;
+
+}
+
+    .main_content h1 {
+        font-weight: 400;
+        font-size: 20px;
+}
+
+    .main_content img {
+        width: 710px;
+        position: relative;
+        left: -30px;
+        margin-top: 14px;
+    }
+
+    .main_content h2 {
+        font-size: 14px;
+        margin: 20px 0 0;
+    }
+
+.text_oblique {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.text_start {
+    margin-bottom: 0;
+}
+
+.text_next {
+    margin: 0;
+}
