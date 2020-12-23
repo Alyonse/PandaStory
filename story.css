@@ -1,3 +1,7 @@
+@import "modal.css";
+@import "buttons.css";
+@import "form.css";
+
 body {
     margin: 0;
     padding: 0;
@@ -55,6 +59,7 @@ body {
 }
 
 .header_navigation {
+    font-family: "Roboto","Open Sans",helvetica,arial,sans-serif;
     display: flex;
     align-items: center;
     padding-top: 4px;
@@ -64,6 +69,7 @@ body {
     font-size: 16px;
     margin-right: 16px;
     text-transform: uppercase;
+    
 }
 
 .header_navigation .navigation_item a {
@@ -75,6 +81,48 @@ body {
 
 .header_navigation .navigation_item a:hover {
     opacity: 1;
+}
+
+.header_navigation .menu_other button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.header_navigation .menu_other:hover {
+    opacity: 1;
+}
+
+.header_controls button {
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 6px 24px;
+    border: 1px solid white;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.svg_icon {
+    fill: #444;
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+.svg_icon:hover {
+    opacity: 1;
+    fill: #000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .main_container {
@@ -110,6 +158,7 @@ body {
         position: relative;
         left: -30px;
         margin-top: 14px;
+        z-index: 1;
     }
 
     .main_content h2 {
